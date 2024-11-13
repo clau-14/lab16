@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab16.css"> 
+    <title>Formulario de Registro</title>
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header >
+        <nav>
+            <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0;">
+                <li style="margin: 0 15px;"><a href="#" >Inicio</a></li>
+                <li style="margin: 0 15px;"><a href="#" >Acerca de</a></li>
+                <li style="margin: 0 15px;"><a href="#" >Servicios</a></li>
+                <li style="margin: 0 15px;"><a href="#" >Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="formulario" action="#" method="POST" enctype="multipart/form-data" id="registroForm">
+        <h2>Registro de Usuario</h2>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo Electrónico:</label>
+        <input type="email" name="email" required>
+
+        <label>Contraseña:</label>
+        <input type="password" name="password" required>
+
+        <label>Imagen de Perfil:</label>
+        <input type="file" name="imagen" id="imagen" accept="image/*" onchange="mostrarImagen(event)" required>
+
+        <img id="ver-imagen" src="#" alt="Vista previa de la imagen" />
+
+        <button type="submit">Registrar</button>
+    </form>
+    <script src="la16.js"></script>
+</body>
+</html>

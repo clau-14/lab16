@@ -1,0 +1,107 @@
+body{
+    background-image: radial-gradient( #9bc0d8 0,
+     #6461c5 83.33%, #4848ae);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.formulario {
+    /* Ancho y centrado del formulario */
+    width: 320px;
+    margin: 50px auto; /* Margen superior para separar del encabezado */
+    padding: 20px;
+    border: 1px solid #69a7e2;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+    background-color: #a6b4c1; /* Fondo del formulario */
+    box-shadow: 5px 5px 10px 5px rgba(55, 55, 81, 0.35);
+}
+
+/* Estilos para las etiquetas de los campos del formulario */
+.formulario label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada del formulario */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="file"] {
+    width: 100%; /* Abarca todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón de enviar */
+.formulario button {
+    width: 100%; /* Abarca todo el ancho del formulario */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #69a7e2; /* Fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #eae1e1; 
+    color: rgb(9, 9, 91);
+    font-weight: 700;
+}
+
+/* Estilos para la imagen de vista previa */
+#ver-imagen {
+    display: none; /* Oculto por defecto hasta que se cargue una imagen */
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    border: 2px solid #69a7e2;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: transparent;
+    padding: 10px ;
+    
+}
+
+/* Estilos para el menú de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos para cada elemento del menú */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilos para los enlaces del menú */
+nav ul li a {
+    color: rgb(231, 223, 223); /* Color de texto */
+    text-decoration: none; /* Elimina subrayado */
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* Cambia el color de fondo del enlace al pasar el ratón */
+nav ul li :hover {
+    background-color: #eae1e1;
+    
+}
+a:hover
+    { color: rgb(9, 9, 91); 
+      border-radius:10px;
+      
+    }
+
